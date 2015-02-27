@@ -3,7 +3,7 @@ Squelettes animés
 
 Voici des .gifs de squelettes pour vos beaux yeux.
 
-{% include figure.html image="hhttps://raw.github.com/f0c300/f0c300.github.io/tree/master/skeletons/Dancing_skull.gif%}
+{% include figure.html image="https://raw.github.com/f0c300/f0c300.github.io/tree/master/skeletons/Dancing_skull.gif%}
 
 
 ![squelette](https://raw.github.com/f0c300/f0c300.github.io/tree/master/skeletons/Dancing_skull.gif) 
