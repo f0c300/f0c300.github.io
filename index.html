@@ -4,7 +4,7 @@
 		<meta charset="utf-8"/>
 		<title>Mathieu Allard</title>
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-		<link href="styles/main.css" type="text/css" rel="stylesheet">
+		<link href="main.css" type="text/css" rel="stylesheet">
         
         <link href='https://fonts.googleapis.com/css?family=Cousine|Cutive+Mono' rel='stylesheet' type='text/css'>
        
@@ -55,7 +55,7 @@ try Junger, Alter, Demain, Seigle & IPL!?
 <hr>  
   
   
-   <div class="liste_projet" id='projet4'>
+   <div class="liste_projet" id='projects'>
 Projects I'm involved in<br>
 <a href="#projet5">Modbus/TCP on embedded systems (2014)</a><br>
 <a href="#projet6">Projet 6</a><br>
@@ -64,10 +64,9 @@ Projects I'm involved in<br>
   
   
   
-   <div class="projet" id='projet5'>
-
-
+<div class="projet" id='projet5'>
 TER 2014 : Modbus/TCP on embedded systems - school project<br>
+<<<<<<< Updated upstream
 
 The main goal was to setup the beaglebone black networking with a modbus server on it, and make it act as an automat.
 To test it, we used an I2C temperature sensor and retrieve this information with a modbus request.
@@ -80,6 +79,16 @@ Code I wrote for various classes I attended
 
 <a href="https://github.com/f0c300/courses">https://github.com/f0c300/courses</a></div>
 
+=======
+Here are the source and explanations for the next student to take it further. The project is about communicating with the modbus protocol between a beaglebone black and a computer, and then we used an i2c sensor to transfer temperatures measurement over the network. The output goes on a file and is read by gnuplot. This little project works on a local network with the beaglebone and the computer directly wired with an ethernet cable.<br>
+<br>
+You may read rapport.pdf first.<br>
+<a href="https://github.com/f0c300/M1MNE-TER">https://github.com/f0c300/M1MNE-TER</a></div>
+  
+  
+<div class="projet" id='projet6'>
+ Code développé dans le cadre de divers travaux pratiques durant mes études de master
+>>>>>>> Stashed changes
 </div>
      
 <div class="projet" id="projet7">
@@ -87,4 +96,29 @@ Workflow consisting of a Python script I've written, which aims to save html con
 <a href="https://github.com/LenaRobin/diplome">https://github.com/LenaRobin/diplome</a>
 </div>
 
+<div id="backtoprojects">
+<a href="#projects">⤴</a>    
+</div>
+
 </body>
+
+<script>
+window.onscroll = function() {
+                    var haut = (document.body.clientHeight);
+                    if (haut > 200) {
+                        var scroll = (document.documentElement.scrollTop ||
+                                document.body.scrollTop);
+                        if (scroll > 700) {
+                            document.getElementById('backtoprojects').style.position = 'absolute';
+                            document.getElementById('backtoprojects').style.top = scroll + 'px';
+                            document.getElementById('backtoprojects').style.right = 5;
+                            document.getElementById('backtoprojects').style.bottom = 5;
+                        } else if (scroll < 190 || scroll === 190) {
+                            document.getElementById('backtoprojects').style.position = 'relative';
+                            document.getElementById('backtoprojects').style.top = 0 + 'px';
+                                                                            
+                        }
+                    }
+                }    
+
+</script>

@@ -27,7 +27,6 @@ body{
     padding-top: 20px;
     background-color: #fffff4;
    box-shadow: 4px 4px 4px 4px rgba(217, 217, 217, 0.69);
-
     }    
     
     
@@ -138,6 +137,12 @@ hr{
     border-top-style: none;
     }
     
+.backtoprojects{
+    display: none;    
+    }
+
+/* MOBILE DEVICE */
+
 @media screen and (max-width: 460px) {
     body{
         margin:8%;
@@ -154,7 +159,23 @@ hr{
 hr {
     margin-right: 5%;   
     margin-left: 0%;
-    }    
+    }  
+    
+#backtoprojects{
+    width: auto;
+    text-align: right;
+    float: right;
+    position:fixed;
+    right:14px;
+    bottom: 10px;
+    display: block;
+    font-size: 25px;
+    }
+    
+#backtoprojects a{
+    text-decoration: none; 
+    color: #9300ff; 
+    }
 }
     
     
