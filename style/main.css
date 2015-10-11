@@ -1,7 +1,10 @@
- 
+@font-face{
+    font-family: cutivemono;
+    src: url('CutiveMono-Regular.ttf');
+} 
 
 body{
-    font-family: "Cutive Mono";        
+    font-family: "cutivemono";        
     font-size: 14px;   
     margin:40px;
 }
